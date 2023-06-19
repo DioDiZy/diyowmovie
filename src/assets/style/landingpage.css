@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+.bgNavbar {
+  height: 100vh;
+  background: url("../img/main.jpg");
+  background-size: cover;
+}
+.Intro {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tittle {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px black;
+}
+.Film {
+  height: auto;
+
+  background: url("../img/Film.jpg");
+  background-size: cover;
+}
+.Film .Container h1 {
+  filter: unset;
+}
+.movieWrapper {
+}
+.movieImage {
+  height: auto;
+  margin: 5px;
+  padding: 5px;
+}
+.Images {
+  height: 500px;
+}
+.MovieSearch {
+}
+.overview {
+  margin-top: 5px;
+  height: 250px;
+}
