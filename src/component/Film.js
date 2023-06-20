@@ -1,7 +1,6 @@
 import { Container, Card, Row, Col, InputGroup, Form } from "react-bootstrap";
 
 import { AiOutlineSearch } from "react-icons/ai";
-import spiderman from "../assets/img/spiderman.jpg";
 import { getMovieList, searchMovie } from "../API/api";
 import { useEffect, useState } from "react";
 const Film = () => {
@@ -13,6 +12,7 @@ const Film = () => {
     });
   }, []);
   const BaseIMGURL = process.env.REACT_APP_BASEIMGURL;
+
   const PopularMoviesList = () => {
     return popularMovies.map((movie, i) => {
       return (
@@ -43,7 +43,7 @@ const Film = () => {
         <Container className="text-white" id="daftarfilm">
           <br />
           <Row>
-            <Col md={3}>
+            <Col md={4}>
               <h1 className="d-absoloute">Daftar Film</h1>
             </Col>
             <Col md={9}>
@@ -55,7 +55,7 @@ const Film = () => {
               </InputGroup>
             </Col>
           </Row>
-          <Row>
+          <Row className="Container-Film">
             <PopularMoviesList />
           </Row>
         </Container>

@@ -26,9 +26,7 @@
   background: url("../img/Film.jpg");
   background-size: cover;
 }
-.Film .Container h1 {
-  filter: unset;
-}
+
 .movieWrapper {
 }
 .movieImage {
@@ -45,9 +43,20 @@
   margin-top: 5px;
   height: 250px;
 }
+
 @media screen and (max-width: 600px) {
   .overview {
     height: unset;
+    height: auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .Images {
+    width: 108vw;
+    height: auto;
+  }
+
+  .overview {
     height: auto;
   }
 }

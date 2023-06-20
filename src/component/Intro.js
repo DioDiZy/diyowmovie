@@ -8,9 +8,11 @@ const Intro = () => {
             <Col>
               <div className="tittle">Nonton Sepuasnya </div>
               <div className="tittle">Hingga Kouta Tak Tersisa</div>
-              <Button className="mt-4 d-flex m-auto" variant="dark">
-                Lihat Film
-              </Button>
+              <a className="text-decoration-none" href="#daftarfilm">
+                <Button className="mt-4 d-flex m-auto" variant="dark">
+                  Lihat Film
+                </Button>
+              </a>
             </Col>
           </Row>
         </Container>
