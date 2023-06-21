@@ -38,8 +38,42 @@
   margin: 5px;
   padding: 5px;
 }
+.container-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
 .Images {
   height: 500px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.Images:hover {
+  transform: scale(1.1);
+}
+.container-image button {
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  background-color: #64ccc5;
+  color: white;
+  font-size: 16px;
+  padding: 10px 30px;
+  border: 1px solid #64ccc5;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  animation: 0.3s linear;
+}
+.container-image button:hover {
+  border: 1px solid #64ccc5;
+  background: none;
+  animation: 0.3s linear;
+}
+.container-image button:active {
+  transform: scale(0.9);
+  animation: 0.3s linear;
 }
 .MovieSearch {
 }
@@ -47,7 +81,10 @@
   margin-top: 5px;
   height: 350px;
 }
-
+.judul-navbar {
+  letter-spacing: 3px;
+  line-height: 1;
+}
 @media screen and (max-width: 600px) {
   .overview {
     height: unset;

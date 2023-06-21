@@ -1,8 +1,9 @@
 import { Container, Card, Row, Col, InputGroup, Form } from "react-bootstrap";
-
+import { moreinfo } from "../script/sweetalert";
 import { AiOutlineSearch } from "react-icons/ai";
 import { getMovieList, searchMovie } from "../API/api";
 import { useEffect, useState } from "react";
+
 const Film = () => {
   const [popularMovies, setPopularMovies] = useState([]);
 
@@ -18,7 +19,12 @@ const Film = () => {
       return (
         <Col md={4} className="movieWrapper" key={i}>
           <Card className="bg-dark text-white movieImage">
-            <Card.Img src={`${BaseIMGURL}/${movie.poster_path}`} alt="card-image" className="Images"></Card.Img>
+            <div className="container-image">
+              <Card.Img src={`${BaseIMGURL}/${movie.poster_path}`} alt="card-image" className="Images"></Card.Img>
+              <button className="btn" onClick={moreinfo}>
+                Detail
+              </button>
+            </div>
             <div className="p-2 m-1">
               <Card.Title className="text-center tittle ">{movie.title}</Card.Title>
               <Card.Text className="overview">{movie.overview}</Card.Text>

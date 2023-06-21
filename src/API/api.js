@@ -2,8 +2,7 @@ import axios from "axios";
 
 const apiKey = process.env.REACT_APP_APIKEY;
 const baseUrl = process.env.REACT_APP_BASEURL;
-const d = new Date();
-let day = d.getDay();
+
 export const getMovieList = async () => {
   const movie = await axios.get(`${baseUrl}/movie/popular?api_key=${apiKey}`);
   return movie.data.results;
