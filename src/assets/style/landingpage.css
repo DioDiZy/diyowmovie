@@ -26,7 +26,11 @@
   background: url("../img/Film.jpg");
   background-size: cover;
 }
-
+.Trend {
+  height: auto;
+  background: url("../img/bg-trending.webp");
+  background-size: cover;
+}
 .movieWrapper {
 }
 .movieImage {
@@ -41,7 +45,7 @@
 }
 .overview {
   margin-top: 5px;
-  height: 250px;
+  height: 350px;
 }
 
 @media screen and (max-width: 600px) {
