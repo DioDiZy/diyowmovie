@@ -1,5 +1,5 @@
 import NavigationBar from "./component/NavigationBar";
-import Intro from "./component/intro";
+import Intro from "./component/Intro";
 import Film from "./component/Film";
 import "./assets/style/landingpage.css";
 import Trending from "./component/Trending";
