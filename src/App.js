@@ -1,5 +1,5 @@
 import NavigationBar from "./component/NavigationBar";
-import Intro from "./component/Intro";
+import Pembukaan from "./component/Pembukaan";
 import Film from "./component/Film";
 import "./assets/style/landingpage.css";
 import Trending from "./component/Trending";
@@ -10,7 +10,7 @@ function App() {
     <div>
       <div className="bgNavbar" onChange={navbarscroll}>
         <NavigationBar />;
-        <Intro />
+        <Pembukaan />
       </div>
       <div className="Film">
         <Film />
