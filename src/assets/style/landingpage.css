@@ -5,7 +5,7 @@
 }
 .bgNavbar {
   height: 100vh;
-  background: url("./img/main.jpg");
+  background: url("../img/main.jpg");
   background-size: cover;
 }
 .Intro {
