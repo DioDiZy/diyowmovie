@@ -20,7 +20,7 @@ const Film = () => {
         <Col md={4} className="movieWrapper" key={i}>
           <Card className="bg-dark text-white movieImage">
             <div className="container-image">
-              <Card.Img src={`${BaseIMGURL}/${movie.poster_path}`} alt="card-image" className="Images"></Card.Img>
+              <Card.Img src={`/assets/img/main.jpg`} alt="card-image" className="Images"></Card.Img>
               <button className="btn" onClick={moreinfo}>
                 Detail
               </button>
